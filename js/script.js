@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Timothy Manwell All rights reserved
+// Copyright (c) 2020 Mr Coxall All rights reserved
 //
 // Created by: Jakub Malhotra
 // Created on: March 2023
