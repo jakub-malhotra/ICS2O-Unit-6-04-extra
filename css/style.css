@@ -39,3 +39,9 @@
 body {
   background-color: gray;
 }
+
+img {
+  float: right;
+  width: 500px;
+  height: auto;
+}
