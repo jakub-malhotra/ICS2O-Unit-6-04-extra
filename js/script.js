@@ -7,13 +7,6 @@
 "use strict"
 
 /**
- * Check service worker.
- */
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit3-02/sw.js", {
-    scope: "/ICS2O-Unit3-02/",
-  })
-}
 
 /**
  * This function calculates the volume of a pyramid
