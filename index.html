@@ -22,83 +22,33 @@
     <link rel="manifest" href="site.webmanifest" />
     <title>volume of a pyramid of with JavaScript</title>
   </head>
-  <body>
+  <body onload="start()">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title"
-            >volume of a pyramid of with JavaScript</span
+            >Fahrenheit to Celsius, Query String</span
           >
         </div>
       </header>
       <main class="mdl-layout__content">
-        <img src="./images/pyramid.jpg" alt="Area of a Pyramid" class="img1" />
-        <h3>volume of Pyramid With JS</h3>
-        <h5>Formula</h5>
-        <h6>V = (L x W x H) / 3</h6>
+        <h1>Fahrenheit to Celsius, Query String</h1>
+        <img
+          src="./images/thermometer.png"
+          alt="thermometer"
+          width="35%"
+          height="auto"
+        />
+        <h2>Formula</h2>
+        <h3>(℉ - 32) x 5/9 = ℃</h3>
         <br />
+        <h4>Fahrenheit:</h4>
+        <div id="fahrenheit"></div>
         <br />
-        <p>Enter the following dimensions</p>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Length</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length-of-pyramid"
-              aria-label="length"
-            />
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          cm
-        </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Width</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="width-of-pyramid"
-              aria-label="width"
-            />
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          cm
-        </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Height</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-pyramid"
-              aria-label="Height"
-            />
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          cm
-        </form>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="enterClicked()"
-        >
-          Calculate
-        </button>
-        <br />
-        <br />
-        <div id="volume-of-pyramid">The volume of the pyramid is: ? cm³</div>
+        <h4>Celsius:</h4>
+        <div id="celsius"></div>
       </main>
     </div>
   </body>
